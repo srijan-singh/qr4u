@@ -1,10 +1,10 @@
 # qr4u
 
-    qr4u or "QR Code For You" is a product which is developed to help people in there day to day life!
+qr4u or "QR Code For You" is a product which is developed to help people in there day to day life!
 
-    The product can encrypt and decrypt the message so you can securely communicate with your friends and families.
+The product can encrypt and decrypt the message so you can securely communicate with your friends and families.
 
-    It can help you to create a QR Code which can store your emergency data; such that when the QR code will be scan the data would be fetched which contains the necessary information of the user.
+It can help you to create a QR Code which can store your emergency data; such that when the QR code will be scan the data would be fetched which contains the necessary information of the user.
 
 ## Software Architecture
 
