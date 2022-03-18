@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    <title>QR Data Generator</title>
+    <!--Script-->
+    <script src="script/secure.js"></script>
+    <script src="script/qrcode.js" defer></script>
+    <script src="script/script.js" defer></script>
+    <!--CSS-->
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="assets/img.svg"/>
+    <!--Additional-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="qr4u : Encrypt, Decrypt and create your own Qr Code">
+    <meta name="author" content="Developed by Srijanverse">
+    
+</head>
+
+<body>
+    <div style="margin: 4%; text-align: center;">
+        <h1 style="font-family:Kalam">qr4u</h1>
+    </div> 
+
+    <center>
+    <div class="main" id="main">
+        
+        <a href="index.html"><img src="assets/img.svg" width="68" height="68"></a>
+
+        <h1 style="font-family:Kalam">QR Data Generator</h1>
+
+        <br>
+
+        <table>
+            <tr>
+                <th>
+                    <label>Name: </label>
+                </th>
+                <td>
+                    <input id ="name" type="text"/>
+                </td>               
+            </tr>
+            <tr>
+                <th>
+                    <label>Age: </label>
+                </th>
+                <td>
+                    <input id ="age" type="number"/>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>Blood Group: </label>
+                </th>
+                <td>
+                    <select id="bloodGroup">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>Precaution: </label>
+                </th>
+                <td>
+                    <input id ="precaution" type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>Emergency Contact</label>
+                </th>
+                <th>
+                    <input id="contact" type="number"/>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    Encryption
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label>Key :</label>
+                </th>
+                <th>
+                    <input id="key" type="number"/>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label>Secret Message: </label>
+                </th>
+                <td>
+                    <input id="secret" type="text"/>
+                </td>
+            </tr>
+        </table>
+       
+        <br>
+    
+        <button class="btn" id="generateBtn" style="font-family:Kalam; background-color: aquamarine; border-radius: 20%;" >Generate</button>
+        
+        <div class="qrdiv hide" id="qrdiv" style="padding: 30px;">
+            <div class="qrcode" id="qrcode">
+                <!--Qr Image-->
+            </div>       
+            
+        </div>
+        
+        <h3 style="font-family:Kalam">Template : It can help you to create a QR Code which can store your emergency data; such that when the QR code will be scan the data would be fethced which contains the necessary information of the user.</h2>
+
+    </div>
+    </center>
+    
+</body>
+
+</html>

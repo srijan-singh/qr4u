@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    <title>QR Data Generator</title>
+    <!--Script-->
+    <script src="script/secure.js"></script>
+    <script src="script/qrcode.js" defer></script>
+    <script src="script/script_free.js" defer></script>
+    <!--CSS-->
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="assets/img.svg"/>
+    <!--Additional-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="qr4u : Encrypt, Decrypt and create your own Qr Code">
+    <meta name="author" content="Developed by Srijanverse">
+    
+</head>
+
+<body>
+    <div style="margin: 4%; text-align: center;">
+        <h1 style="font-family:Kalam">qr4u</h1>
+    </div> 
+
+    <center>
+    <div class="main" id="main">
+        
+        <a href="index.html"><img src="assets/img.svg" width="68" height="68"></a>
+
+        <h1 style="font-family:Kalam">QR Data Generator</h1>
+
+        <br>
+
+        <table>
+            <tr>
+                <th colspan="2">
+                    <label>QR Message</label>
+                </th>                
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <textarea id="secret" rows="4" cols="20" maxlength="30"></textarea>                    
+                </th>
+            </tr>
+            <!--tr>
+                <th colspan="2">
+                    <label>Key</label>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input id="key" type="number"/>
+                </th>
+            </tr-->
+        </table>
+       
+        <br>
+    
+        <button class="btn" id="generateBtnFree" style="font-family:Kalam; background-color: aquamarine; border-radius: 20%;">Generate</button>
+        
+        <div class="qrdiv hide" id="qrdiv" style="padding: 30px;">
+            <div class="qrcode" id="qrcode">
+                <!--Qr Image-->
+            </div>       
+            
+        </div>
+
+        <h3 style="font-family:Kalam">Paragraph: It can generate Qr Code from the text provided into paragraph word limit is 30 characters.</h3>
+    </div>
+    </center>
+
+    
+</body>
+
+</html>

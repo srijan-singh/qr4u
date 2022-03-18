@@ -1,0 +1,83 @@
+*{
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    color:white;
+     /*Logo Design*/
+     text-shadow: -1px 1px 0 #000,
+     1px 1px 0 #000,
+    1px -1px 0 #000,
+   -1px -1px 0 #000;
+}
+
+.qr{
+    margin-top: 1%;
+    padding: 2px;
+    width: 196px;
+    height: 156px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    background: linear-gradient(to bottom, seagreen, aquamarine);
+}
+
+.encrypt{
+    float: left;
+    width: 200px;
+    height: 160px;
+    margin-left: 20%;
+    border-radius: 10%;
+    background: linear-gradient(to bottom left, seagreen, aquamarine);
+}
+
+.decrypt{
+    float: right;
+    width: 200px;
+    height: 160px;
+    margin-right: 20%;
+    border-radius: 10%;
+    box-shadow: 20em;
+    background: linear-gradient(to bottom right, seagreen, aquamarine);
+}
+
+.qr_temp{
+    float: left;
+    width: 200px;
+    height: 160px;
+    margin-left: 25%;
+    border-radius: 10%;
+    background: linear-gradient(to bottom left, seagreen, aquamarine);
+}
+
+.qr_free{
+    float: right;
+    width: 200px;
+    height: 160px;
+    margin-right: 25%;
+    border-radius: 10%;
+    box-shadow: 20em;
+    background: linear-gradient(to bottom right, seagreen, aquamarine);
+}
+@media only screen and (max-width: 721px){
+
+    .encrypt, .decrypt, .qr_temp, .qr_free{
+        margin-top: 4%;
+        padding-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+}

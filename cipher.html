@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>    
+    <title>Encrypt</title>
+    <!--Script-->
+    <script src="script/secure.js"></script>
+    <script src="script/monoalphabetic.js"></script>
+    <!--CSS-->
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="assets/img.svg"/>
+    <!--Additional-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="qr4u : Encrypt, Decrypt and create your own Qr Code">
+    <meta name="author" content="Developed by Srijanverse">
+</head>
+
+<body>
+    <div style="margin: 4%; text-align: center;">
+        <h1 style="font-family:Kalam">qr4u</h1>
+    </div> 
+    
+    <center>
+    <div>
+        <a href="index.html"><img src="assets/img.svg" width="68" height="68"></a>
+
+        <h1 style="font-family:Kalam">Encrypt</h1>
+
+        <br>
+
+            <table>
+                <tr>                   
+                    <th>
+                        <label>Cipher Key: </label>                        
+                    </th>
+                    <th>
+                        <input id="key" type="number"/>
+                    </th>
+                </tr>
+                <tr>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Plain Text: </label>
+                    </th>
+                    <th>
+                        <input id ="plainText" type="text"/>
+                    </th>               
+                </tr>                                        
+            </table>
+            <br>
+            <button class="btn" id="cipher" onclick="monoAlphabeticCipher()" style="font-family:Kalam; margin-top:4%; margin-bottom:4%; margin-left: auto; margin-right: auto; background-color: aquamarine; border-radius: 20%;">Cipher</button>        
+        <br>          
+    </div>
+
+    <div id="result" style="padding: 4%;">
+        Result will be displayed here!
+    </div>
+
+    </center>
+</body>
+
+</html>
